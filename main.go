@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	key, err := rsa.GenerateKey(rand.Reader, 2048)
+	key, err := rsa.GenerateKey(rand.Reader, 128)
 	if err != nil {
 		fmt.Println(err)
 	}
